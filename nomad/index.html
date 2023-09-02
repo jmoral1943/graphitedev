@@ -118,107 +118,149 @@
         .support-section input[type="submit"]:hover {
             background-color: #ff5500;
         }
+
+        /* General styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            /* Sample font, you can replace this with your preferred font */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            /* Sample background color, feel free to change */
+        }
+
+        /* Styling to center and restrict the content width */
+        .content-wrapper {
+            max-width: 1200px;
+            /* Max width can be adjusted as required */
+            margin: 0 auto;
+            /* Centers the content horizontally */
+            padding: 20px;
+            /* Provides some spacing around the content */
+            background-color: #ffffff;
+            /* Sets a background color for the content area */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Optional: Adds a subtle shadow around the content area */
+        }
+
+        /* Additional image styles */
+        .header-image {
+            max-width: 100%;
+            /* Ensures image does not overflow its container */
+            height: auto;
+            /* Maintains image aspect ratio */
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="content-wrapper">
+        <div class="container">
 
-        <header>
-            <div class="logo-container">
-                <!-- Logo Placeholder -->
-                <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo" class="logo">
-                <div class="branding-text">
-                    <h1 class="app-name">Nomad</h1>
-                    <p class="slogan">Discover. Dream. Explore.</p>
+            <header>
+                <div class="logo-container">
+                    <!-- Logo Placeholder -->
+                    <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo" class="logo">
+                    <div class="branding-text">
+                        <h1 class="app-name">Nomad</h1>
+                        <p class="slogan">Discover. Dream. Explore.</p>
+                    </div>
                 </div>
-            </div>
-            <p>Tired of the endless hours planning trips? Dive into the world of Nomad, where your next adventure is a
-                few taps away.</p>
-        </header>
+                <p>Tired of the endless hours planning trips? Dive into the world of Nomad, where your next adventure is
+                    a
+                    few taps away.</p>
+            </header>
 
 
-        <h1>Welcome to Nomad</h1>
-        <p>Where your dream journey becomes a reality. From local hidden gems to worldwide adventures, Nomad is your
-            travel companion.</p>
-        <img src="https://images.unsplash.com/photo-1532594722383-b75fb8381b55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2578&q=80"
-            alt="Inviting travel destination" class="header-image">
+            <h1>Welcome to Nomad</h1>
+            <p>Where your dream journey becomes a reality. From local hidden gems to worldwide adventures, Nomad is your
+                travel companion.</p>
+            <img src="https://images.unsplash.com/photo-1532594722383-b75fb8381b55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2578&q=80"
+                alt="Inviting travel destination" class="header-image">
 
 
-        <!-- AI-Powered Discovery -->
-        <section class="ai-discovery">
-            <h2>Discover the World with AI</h2>
-            <p>At the heart of Nomad lies a cutting-edge AI engine designed to craft unique itineraries tailored for
-                you. Here's how:</p>
+            <!-- AI-Powered Discovery -->
+            <section class="ai-discovery">
+                <h2>Discover the World with AI</h2>
+                <p>At the heart of Nomad lies a cutting-edge AI engine designed to craft unique itineraries tailored for
+                    you. Here's how:</p>
 
-            <ul>
-                <li><strong>Personalized Recommendations:</strong> Our AI analyzes your preferences, previous travels,
-                    and even current mood to suggest destinations that resonate with you.</li>
-                <li><strong>Local Adventures:</strong> Not traveling? No problem. Ask Nomad for interesting things to do
-                    in your local area. From hidden cafes to local art shows, there's always something new to discover
-                    right at your doorstep.</li>
-                <li><strong>Real-time Adjustments:</strong> Change of plans? Our AI adjusts your itinerary in real-time,
-                    ensuring your travel experience remains seamless.</li>
-            </ul>
-        </section>
+                <ul>
+                    <li><strong>Personalized Recommendations:</strong> Our AI analyzes your preferences, previous
+                        travels,
+                        and even current mood to suggest destinations that resonate with you.</li>
+                    <li><strong>Local Adventures:</strong> Not traveling? No problem. Ask Nomad for interesting things
+                        to do
+                        in your local area. From hidden cafes to local art shows, there's always something new to
+                        discover
+                        right at your doorstep.</li>
+                    <li><strong>Real-time Adjustments:</strong> Change of plans? Our AI adjusts your itinerary in
+                        real-time,
+                        ensuring your travel experience remains seamless.</li>
+                </ul>
+            </section>
 
-        <!-- Features -->
-        <section class="features-list">
-            <!-- Feature 1 -->
-            <div class="feature">
-                <img src="../assets/nomad/techImage.png"
-                    alt="AI-Powered Itineraries Image (e.g., a digital globe or neural network visualization)">
-                <h2>AI-Powered Itineraries</h2>
-                <p>Let sophisticated AI algorithms plan a unique trip tailored for you. Be it beaches, cities, or hidden
-                    gems, we’ve got it covered.</p>
-            </div>
+            <!-- Features -->
+            <section class="features-list">
+                <!-- Feature 1 -->
+                <div class="feature">
+                    <img src="../assets/nomad/techImage.png"
+                        alt="AI-Powered Itineraries Image (e.g., a digital globe or neural network visualization)">
+                    <h2>AI-Powered Itineraries</h2>
+                    <p>Let sophisticated AI algorithms plan a unique trip tailored for you. Be it beaches, cities, or
+                        hidden
+                        gems, we’ve got it covered.</p>
+                </div>
 
-            <!-- Feature 2 -->
-            <div class="feature">
-                <img src="https://images.unsplash.com/photo-1615826932727-ed9f182ac67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80"
-                    alt="Organized & Accessible Image (e.g., calendar or journal)">
-                <h2>Organized & Accessible</h2>
-                <p>From past adventures to future escapades, keep track of your travel stories all in one place.</p>
-            </div>
+                <!-- Feature 2 -->
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1615826932727-ed9f182ac67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80"
+                        alt="Organized & Accessible Image (e.g., calendar or journal)">
+                    <h2>Organized & Accessible</h2>
+                    <p>From past adventures to future escapades, keep track of your travel stories all in one place.</p>
+                </div>
 
-            <!-- More features in the works -->
-            <div class="feature">
-                <h2>Stay Tuned...</h2>
-                <p>Our innovation never stops. We’re always working behind the scenes to bring new features to life.</p>
-                <!-- Placeholder for an innovation-related image -->
-                <img src="URL_FOR_INNOVATION_IMAGE" alt="Innovation representation">
-            </div>
-        </section>
+                <!-- More features in the works -->
+                <div class="feature">
+                    <h2>Stay Tuned...</h2>
+                    <p>Our innovation never stops. We’re always working behind the scenes to bring new features to life.
+                    </p>
+                    <!-- Placeholder for an innovation-related image -->
+                    <img src="URL_FOR_INNOVATION_IMAGE" alt="Innovation representation">
+                </div>
+            </section>
 
-        <!-- Call To Action -->
-        <section class="cta">
-            <h2>Ready for Your Next Adventure?</h2>
-            <p>Join the Nomad community. Simplify your travels and make every journey memorable.</p>
-            <button>Get Started</button>
-        </section>
+            <!-- Call To Action -->
+            <section class="cta">
+                <h2>Ready for Your Next Adventure?</h2>
+                <p>Join the Nomad community. Simplify your travels and make every journey memorable.</p>
+                <button>Get Started</button>
+            </section>
 
-        <!-- Support Email Section -->
-        <section class="support-section">
-            <h2>Contact Us</h2>
-            <p>We are working relentlessly to bring you new adventures. If you encounter any issues or have suggestions,
-                please let us know.</p>
-            <form action="mailto:info@graphitedev.com" method="post" enctype="text/plain">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            <!-- Support Email Section -->
+            <section class="support-section">
+                <h2>Contact Us</h2>
+                <p>We are working relentlessly to bring you new adventures. If you encounter any issues or have
+                    suggestions,
+                    please let us know.</p>
+                <form action="mailto:info@graphitedev.com" method="post" enctype="text/plain">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" value="Nomad">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" value="Nomad">
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required
-                    placeholder="Describe your issue or suggestion..."></textarea>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Describe your issue or suggestion..."></textarea>
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
 
 
 
+        </div>
     </div>
 </body>
 
