@@ -77,6 +77,67 @@
             border-radius: 5px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
+
+        /* Existing styles */
+        /* ... (Include the styles previously provided) ... */
+
+        /* Added/Modified styles */
+
+        .logo {
+            max-width: 250px;
+        }
+
+        .mission-section,
+        .features-list,
+        .testimonials,
+        .cta {
+            background: #fff;
+            margin-top: 40px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-section img,
+        .features-list .feature img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials {
+            background: #F9F9F9;
+            text-align: center;
+        }
+
+        .testimonial {
+            padding: 20px;
+            border-bottom: 1px solid #EAEAEA;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        .cta {
+            text-align: center;
+        }
+
+        button {
+            background-color: #2E77D0;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #245B9B;
+        }
     </style>
 </head>
 
@@ -84,22 +145,32 @@
     <div class="container">
         <header>
             <!-- Logo Placeholder -->
-            <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo">
+            <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo" class="logo">
 
             <h1>Welcome to Nomad</h1>
-            <p>Tired of the endless hours planning trips? Dive into the world of Nomad, where your next adventure is a
-                few taps away.</p>
+            <p>Your next adventure, simplified. Dive into the world of Nomad and make your travel dreams come alive.</p>
         </header>
 
+        <!-- Our Mission -->
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>At Nomad, we believe that every journey has a story to tell. Our dedicated team, although small, is on a
+                grand mission: using technology to bridge the gap between your travel dreams and reality. We want to
+                revolutionize the way people explore the world—ensuring safety, efficiency, and unparalleled
+                experiences.</p>
+            <!-- Placeholder for an image that might depict team or a journey -->
+            <img src="URL_FOR_A_TEAM_OR_JOURNEY_IMAGE" alt="Team or journey representation">
+        </section>
+
         <!-- Features -->
-        <div class="features-list">
+        <section class="features-list">
             <!-- Feature 1 -->
             <div class="feature">
                 <img src="../assets/nomad/techImage.png"
                     alt="AI-Powered Itineraries Image (e.g., a digital globe or neural network visualization)">
                 <h2>AI-Powered Itineraries</h2>
-                <p>Input your desired destination and travel dates, and let our sophisticated AI craft a detailed
-                    itinerary tailored specifically for you.</p>
+                <p>Let sophisticated AI algorithms plan a unique trip tailored for you. Be it beaches, cities, or hidden
+                    gems, we’ve got it covered.</p>
             </div>
 
             <!-- Feature 2 -->
@@ -107,50 +178,40 @@
                 <img src="https://images.unsplash.com/photo-1615826932727-ed9f182ac67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80"
                     alt="Organized & Accessible Image (e.g., calendar or journal)">
                 <h2>Organized & Accessible</h2>
-                <p>All your trips, chronologically sorted! Return to the app at any time to review your previously
-                    crafted itineraries.</p>
+                <p>From past adventures to future escapades, keep track of your travel stories all in one place.</p>
             </div>
 
-            <!-- Features in the works -->
-            <div class="feature" style="grid-column: span 2;">
-                <h2>More Features Coming Soon!</h2>
-                <p>We're continually innovating, and exciting new features are currently in the works. Stay tuned and
-                    experience the ever-evolving world of Nomad!</p>
-                <!-- Placeholder for an image that might depict work-in-progress or innovation -->
-                <img src="URL_FOR_A_FUTURE_TECH_OR_INNOVATION_IMAGE"
-                    alt="A representation of future innovations (e.g., a blueprint or conceptual tech illustration)">
+            <!-- More features in the works -->
+            <div class="feature">
+                <h2>Stay Tuned...</h2>
+                <p>Our innovation never stops. We’re always working behind the scenes to bring new features to life.</p>
+                <!-- Placeholder for an innovation-related image -->
+                <img src="URL_FOR_INNOVATION_IMAGE" alt="Innovation representation">
             </div>
-        </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"I've never planned trips this effortlessly! Nomad has changed the game for me."</p>
+                <span>- Alex</span>
+            </div>
+            <div class="testimonial">
+                <p>"Discovering new places and organizing my itineraries has never been easier. Kudos to the Nomad
+                    team!"</p>
+                <span>- Jamie</span>
+            </div>
+        </section>
 
         <!-- Call To Action -->
-        <div class="cta">
-            <h2>Join the Nomad community today!</h2>
-            <p>Turn the tedious task of trip planning into a delightful experience. Travel the world with confidence,
-                knowing Nomad has got your back.</p>
-        </div>
-
-        <!-- About Us -->
-        <div class="about-us">
-            <h2>Meet the Team Behind Nomad</h2>
-            <p>At Nomad, we're more than just an app; we're a passionate group of individuals committed to reimagining
-                the way you travel. Founded by a small team of tech enthusiasts and avid travelers, we believe in the
-                transformative power of exploration. Our journey began with a simple idea: harness the best of
-                technology to connect people to the world around them.</p>
-
-            <p>Traveling should be an enriching experience, opening our eyes to new cultures, landscapes, and horizons.
-                Yet, with the ever-growing influx of information, planning a trip often becomes overwhelming. We wanted
-                to change that. With Nomad, we've harnessed the prowess of AI to simplify trip planning, ensuring each
-                journey you embark on is unique and tailored just for you.</p>
-
-            <p>But beyond the tech, your safety is our utmost priority. While we encourage every adventurer to explore
-                uncharted territories, we also emphasize the importance of traveling safely. In this digital age, we're
-                leveraging cutting-edge tools to ensure you're not only discovering new places but doing so with
-                confidence and security.</p>
-
-            <p>We're here for you, every step of the way. So pack your bags, and let's explore this beautiful world
-                together. With Nomad by your side, every journey promises to be an unforgettable adventure.</p>
-        </div>
+        <section class="cta">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Join the Nomad community. Simplify your travels and make every journey memorable.</p>
+            <button>Get Started</button>
+        </section>
     </div>
 </body>
+
 
 </html>
