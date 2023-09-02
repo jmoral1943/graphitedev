@@ -10,7 +10,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
         }
 
         .container {
@@ -21,45 +23,59 @@
 
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 80px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #e1e1e1;
         }
 
         header img {
-            width: 150px;
+            width: 200px;
+            margin-bottom: 20px;
         }
 
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            line-height: 1.6;
+        h1,
+        h2 {
+            font-weight: 400;
         }
 
         .features-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 40px;
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         .feature {
+            text-align: center;
             padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .feature img {
-            width: 100%;
-            margin-bottom: 10px;
+            width: 80%;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .cta {
             text-align: center;
             margin-top: 50px;
+            padding: 50px 0;
+            background-color: #fff;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .about-us {
+            padding: 60px 0;
+            background-color: #fff;
+            margin-top: 40px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
@@ -95,8 +111,15 @@
                     crafted itineraries.</p>
             </div>
 
-            <!-- Additional features can be added similarly... -->
-
+            <!-- Features in the works -->
+            <div class="feature" style="grid-column: span 2;">
+                <h2>More Features Coming Soon!</h2>
+                <p>We're continually innovating, and exciting new features are currently in the works. Stay tuned and
+                    experience the ever-evolving world of Nomad!</p>
+                <!-- Placeholder for an image that might depict work-in-progress or innovation -->
+                <img src="URL_FOR_A_FUTURE_TECH_OR_INNOVATION_IMAGE"
+                    alt="A representation of future innovations (e.g., a blueprint or conceptual tech illustration)">
+            </div>
         </div>
 
         <!-- Call To Action -->
