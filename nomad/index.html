@@ -138,28 +138,109 @@
         button:hover {
             background-color: #245B9B;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F3F4F6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .nav-items {
+            list-style: none;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .ai-discovery,
+        .future-dev {
+            margin: 50px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            margin-top: 20px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <nav>
+            <div class="logo-nav">
+                <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo" class="logo">
+            </div>
+            <ul class="nav-items">
+                <!-- Placeholder for future navigation links -->
+            </ul>
+        </nav>
         <header>
-            <!-- Logo Placeholder -->
-            <img src="../assets/nomad/nomad-logo.png" alt="Nomad Logo" class="logo">
-
             <h1>Welcome to Nomad</h1>
-            <p>Your next adventure, simplified. Dive into the world of Nomad and make your travel dreams come alive.</p>
+            <p>Where your dream journey becomes a reality. From local hidden gems to worldwide adventures, Nomad is your
+                travel companion.</p>
+            <img src="URL_FOR_A_BEACH_OR_DESTINATION_IMAGE" alt="Inviting travel destination" class="header-image">
         </header>
 
-        <!-- Our Mission -->
-        <section class="mission-section">
-            <h2>Our Mission</h2>
-            <p>At Nomad, we believe that every journey has a story to tell. Our dedicated team, although small, is on a
-                grand mission: using technology to bridge the gap between your travel dreams and reality. We want to
-                revolutionize the way people explore the world—ensuring safety, efficiency, and unparalleled
-                experiences.</p>
-            <!-- Placeholder for an image that might depict team or a journey -->
-            <img src="URL_FOR_A_TEAM_OR_JOURNEY_IMAGE" alt="Team or journey representation">
+        <!-- AI-Powered Discovery -->
+        <section class="ai-discovery">
+            <h2>Discover the World with AI</h2>
+            <p>At the heart of Nomad lies a cutting-edge AI engine designed to craft unique itineraries tailored for
+                you. Here's how:</p>
+
+            <ul>
+                <li><strong>Personalized Recommendations:</strong> Our AI analyzes your preferences, previous travels,
+                    and even current mood to suggest destinations that resonate with you.</li>
+                <li><strong>Local Adventures:</strong> Not traveling? No problem. Ask Nomad for interesting things to do
+                    in your local area. From hidden cafes to local art shows, there's always something new to discover
+                    right at your doorstep.</li>
+                <li><strong>Real-time Adjustments:</strong> Change of plans? Our AI adjusts your itinerary in real-time,
+                    ensuring your travel experience remains seamless.</li>
+            </ul>
         </section>
 
         <!-- Features -->
