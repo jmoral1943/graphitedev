@@ -6,143 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomad: Itinerary Planner</title>
     <style>
+        /* Global styling */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #302928;
-            color: #98A2B5;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #C8C6BE;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
         }
 
         header {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #726E75;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            color: #C4C7C6;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        .features-list,
-        .ai-discovery,
-        .future-dev {
-            margin: 30px 0;
+            background-color: #fafafa;
             padding: 20px;
-            background-color: #C4C7C6;
-            border-radius: 8px;
         }
 
-        .feature h2,
-        .ai-discovery h2,
-        .future-dev h2 {
-            color: #726E75;
+        .logo {
+            width: 80px;
+            /* Reduced size */
+            display: inline-block;
+            vertical-align: middle;
         }
 
-        .cta {
-            padding: 30px;
-            text-align: center;
-            background-color: #98A2B5;
-            border-radius: 8px;
+        .branding-text .app-name {
+            font-size: 24px;
+            color: #333;
         }
 
-        .cta h2 {
-            font-size: 2em;
+        .branding-text .slogan {
+            font-size: 16px;
+            color: #777;
         }
 
-        .support-section {
-            background-color: #C4C7C6;
-            padding: 40px;
-            border-radius: 8px;
-            margin: 30px 0;
+        .header-image {
+            width: 100%;
+            max-width: 500px;
+            /* Reduced size */
+            display: block;
+            margin: 20px auto;
         }
 
-        .support-section h2 {
-            font-size: 2em;
-            color: #726E75;
+        /* AI-Powered Discovery section */
+        .ai-discovery {
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        .ai-discovery h2 {
+            color: #ff4500;
+            /* Adjusted color for better visibility */
+        }
+
+        /* Features section */
+        .features-list .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .features-list img {
+            width: 60%;
+            /* Adjusted size */
+            max-width: 400px;
             margin-bottom: 20px;
         }
 
-        .support-section form {
-            display: grid;
-            gap: 20px;
+        /* Call to action section */
+        .cta {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
 
-        .support-section label {
-            font-weight: bold;
-            color: #726E75;
-        }
-
-        .support-section input[type="text"],
-        .support-section input[type="email"],
-        .support-section textarea {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #98A2B5;
-            border-radius: 5px;
-            background-color: #C8C6BE;
-        }
-
-        .support-section input[type="submit"] {
-            background-color: #726E75;
-            color: #C8C6BE;
-            padding: 10px 20px;
+        .cta button {
+            background-color: #ff4500;
+            color: #fff;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
-        .support-section input[type="submit"]:hover {
-            background-color: #302928;
-            color: #98A2B5;
+        .cta button:hover {
+            background-color: #ff5500;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
+        /* Support Email section */
+        .support-section {
+            background-color: #f4f4f4;
+            padding: 20px;
         }
 
-        .logo {
-            width: 40px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-        .branding-text {
+        .support-section form {
             display: flex;
             flex-direction: column;
         }
 
-        .app-name {
-            font-family: 'Dancing Script', cursive;
-            /* Remember to include the Google Font link in your HTML */
-            font-size: 2em;
-            color: #302928;
+        .support-section label,
+        .support-section input,
+        .support-section textarea {
+            width: 100%;
+            margin-bottom: 10px;
         }
 
-        .slogan {
-            font-size: 1.2em;
-            font-style: italic;
-            color: #726E75;
+        .support-section input[type="submit"] {
+            cursor: pointer;
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .support-section input[type="submit"]:hover {
+            background-color: #ff5500;
         }
     </style>
 </head>
@@ -233,7 +207,7 @@
                 <input type="email" id="email" name="email" required placeholder="Enter your email address">
 
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" value="Nomad" readonly>
+                <input type="text" id="subject" name="subject" value="Nomad">
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required
